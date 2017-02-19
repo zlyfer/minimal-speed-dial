@@ -41,12 +41,12 @@ function addSpeedDialBookmark(bookmark, entryArray) {
 function addSpeedDialFolder(bookmark, entryArray) {
 	var entry = $('<div class="entry" id="' + bookmark.id + '">' +
 					'<a class="bookmark" href="newtab.html#' + bookmark.id + '" title="' + bookmark.title + '" >' +
-						'<div class="image"><span class="foundicon-folder"></span></div>' +
 						'<table class="details"><tbody><tr>' +
 							'<td class="edit" title="Edit"><span class="foundicon-edit"></span></td>' +
 							'<td class="title"><div>' + bookmark.title + '</div></td>' +
 							'<td class="remove" title="Remove"><span class="foundicon-remove"></span></td></tr></tbody>' +
 						'</table>' +
+						'<div class="image"><span class="foundicon-folder"></span></div>' +
 					'</a>' +
 				'</div>');
 
@@ -86,7 +86,7 @@ function setDialStyles() {
 		".entry { height:" + (entryWidth * 0.75 | 0) + "px; width:" + (entryWidth | 0) + "px; } " +
 		"td.title { max-width:" + (entryWidth - 50 | 0) + "px; } " +
 		".image { height:" + ((entryWidth * 0.75) - 20 | 0) + "px; } " +
-		".foundicon-folder { font-size:" + (entryWidth * 0.5 | 0) + "px; top:" + (entryWidth * 0.05 | 0) + "px; color:" + folderColor + " } "
+		".foundicon-folder { font-size:" + (entryWidth * 0.5 | 0) + "px; color:" + folderColor + " } "
 	);
 }
 
