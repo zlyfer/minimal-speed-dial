@@ -3,9 +3,7 @@ Minimal Speed Dial
 
 A speed dial functionally similar to the one used in Opera.
 
-[Chrome Extension](https://chrome.google.com/webstore/detail/simple-speed-dial/gpdpldlbafdmhlmcdllcjgoigmpjonfc/details)
-[GitHub Repository](https://github.com/j3nda/speed-dial-chrome)
-
+[GitHub Repository](https://github.com/josephfusco/minimal-speed-dial)
 
 Features
 --------------
