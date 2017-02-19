@@ -61,7 +61,7 @@ function createDefaults() {
 		dial_width: "70",
 		drag_and_drop: "true",
 		enable_sync: "false",
-		folder_color: "#888888",
+		folder_color: "#f1f1f1",
 		force_http: "true",
 		show_advanced: "false",
 		show_folder_list: "false",
