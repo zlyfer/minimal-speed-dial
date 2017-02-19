@@ -15,22 +15,16 @@ body {
 
 .entry {
 	float: left;
-	border: 7px solid transparent;
-}
-
-.entry:hover {
-	border: 7px solid rgba(53, 191, 256, 0.5);
-	border-radius: 12px;
+	margin: 7px;
 }
 
 .bookmark {
 	background: #fff;
-	box-shadow: 2px 2px 2px #aaa;
-	border-radius: 5px;
 	float: left;
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
+	border: 1px solid #e1e1e1;
 }
 
 .entry .bookmark:hover {
@@ -40,8 +34,6 @@ body {
 .image {
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
 }
 
 .custom-icon {
@@ -85,15 +77,23 @@ td {
 	opacity: 0.9;
 }
 
+#new_entry {
+	cursor: pointer;
+}
 
 #new_entry div {
-	background-color: #aaa;
-	border-radius: 5px;
+	background-color: #f6f6f6;
 	height: 100%;
+	position: relative;
+	border: 1px solid #e1e1e1;
 }
 
 .foundicon-folder, .foundicon-plus {
-	position: relative;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #bookmark_form h1 {
@@ -109,25 +109,36 @@ td {
 }
 
 #bookmark_form input {
-	padding: 0 5px;
+	padding: 10px;
 	width: 300px;
 }
 
 #bookmark_form button {
-	width: 10em;
-	height: 2em;
-	font-size: 110%;
+	border: 0;
+	padding: 15px 30px;
+	background-color: #007bff;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .15s opacity;
+}
+
+#bookmark_form button:hover,
+#bookmark_form button:focus {
+	opacity: .8;
 }
 
 #options {
 	position: absolute;
 	right: 0px;
 	top: -5px;
+	margin: 10px;
 }
 
 #options a {
-	font-size: 5em;
+	font-size: 20px;
 	color: #aaa;
+	width: 30;
 	text-decoration: none;
 }
 
