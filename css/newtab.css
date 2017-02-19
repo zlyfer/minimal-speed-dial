@@ -24,7 +24,7 @@ body {
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
-	border: 1px solid #e1e1e1;
+	border: 1px solid rgba(0,0,0,0.1);
 }
 
 .entry .bookmark:hover {
@@ -34,6 +34,7 @@ body {
 .image {
 	background-size: cover;
 	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 .custom-icon {
@@ -44,6 +45,7 @@ body {
 .details {
 	border-collapse: collapse;
 	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 td {
@@ -64,10 +66,10 @@ td {
 }
 
 .details .title {
-	vertical-align: baseline;
+	vertical-align: middle;
 	color: #222;
 	font-size: 1em;
-	font-weight: bold;
+	font-weight: 400;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
@@ -81,11 +83,17 @@ td {
 	cursor: pointer;
 }
 
+#new_entry:hover .foundicon-folder,
+#new_entry:hover .foundicon-plus {
+	color: rgba(0,0,0,0.2);
+}
+
 #new_entry div {
-	background-color: #f6f6f6;
+	background-color: transparent;
 	height: 100%;
 	position: relative;
-	border: 1px solid #e1e1e1;
+	border: 1px solid rgba(0,0,0,0.1);
+	transition: .15s color;
 }
 
 .foundicon-folder, .foundicon-plus {
@@ -94,6 +102,8 @@ td {
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
+	color: rgba(0,0,0,0.1);
+	transition: .15s color;
 }
 
 #bookmark_form h1 {
@@ -137,14 +147,15 @@ td {
 
 #options a {
 	font-size: 20px;
-	color: #aaa;
+	color: rgba(0,0,0,0.2);
 	width: 30;
 	text-decoration: none;
+	transition: .15s color;
 }
 
-#options a:hover {
-	color: #888;
-	text-shadow: 0px 0px 10px rgba(53, 191, 255, 0.6);
+#options a:hover,
+#options a:focus {
+	color: rgba(0,0,0,0.3);
 }
 
 #folder_list {

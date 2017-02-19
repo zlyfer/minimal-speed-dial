@@ -9,12 +9,12 @@ function addNewEntryButton(entryArray) {
 function addSpeedDialBookmark(bookmark, entryArray) {
 	var entry = $('<div id="' + bookmark.id + '" class="entry">' +
 					'<a class="bookmark" href="' + bookmark.url + '" title="' + bookmark.title + '">' +
-						'<div class="image"></div>' +
 						'<table class="details"><tbody><tr>' +
 							'<td class="edit" title="Edit"><span class="foundicon-edit"></span></td>' +
 							'<td class="title">' + bookmark.title + '</td>' +
 							'<td class="remove" title="Remove"><span class="foundicon-remove"></span></td></tr></tbody>' +
 						'</table>' +
+						'<div class="image"></div>' +
 					'</a>' +
 				'</div>');
 

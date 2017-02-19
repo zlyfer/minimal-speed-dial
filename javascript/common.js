@@ -53,7 +53,7 @@ function getStartingFolder() {
 // Create default localStorage values if they don't already exist
 function createDefaults() {
 	var default_values = {
-		background_color: "#f6f6f6",
+		background_color: "#ffffff",
 		custom_icon_data: "{}",
 		center_vertically: "true",
 		default_folder_id: "1",
@@ -64,7 +64,7 @@ function createDefaults() {
 		folder_color: "#888888",
 		force_http: "true",
 		show_advanced: "false",
-		show_folder_list: "true",
+		show_folder_list: "false",
 		show_new_entry: "true",
 		show_options_gear: "true",
 		show_subfolder_icons: "true",
