@@ -86,8 +86,7 @@ function setDialStyles() {
 		".entry { height:" + (entryWidth * 0.75 | 0) + "px; width:" + (entryWidth | 0) + "px; } " +
 		"td.title { max-width:" + (entryWidth - 50 | 0) + "px; } " +
 		".image { height:" + ((entryWidth * 0.75) - 20 | 0) + "px; } " +
-		".foundicon-folder { font-size:" + (entryWidth * 0.5 | 0) + "px; top:" + (entryWidth * 0.05 | 0) + "px; color:" + folderColor + " } " +
-		".foundicon-plus { font-size:" + (entryWidth * 0.3 | 0) + "px; top:" + (entryWidth * 0.18 | 0) + "px; } "
+		".foundicon-folder { font-size:" + (entryWidth * 0.5 | 0) + "px; top:" + (entryWidth * 0.05 | 0) + "px; color:" + folderColor + " } "
 	);
 }
 
