@@ -52,10 +52,6 @@ td {
 	padding: 3px 0;
 }
 
-#folder_list {
-	width: 90%;
-}
-
 #thumbnailing_service {
 	width: 80%;
 }
@@ -68,14 +64,42 @@ td {
 	font-size: 12px;
 }
 
+input[type="button"] {
+	border: 0;
+	padding: 10px 26px;
+	background-color: #007bff;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .15s opacity;
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus {
+	opacity: .8;
+}
+
 #save {
 	width: 10em;
-	height: 2em;
 	font-size: 100%;
 }
 
 #cancel {
 	width: 10em;
-	height: 2em;
 	font-size: 100%;
+}
+
+select {
+	width: 100%;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAeElEQVQoU2NkIAAYZ86cWcDAwMCPTd3///8/MM6YMeMCIyOjPg4FFxnnz58v8PPnzwPoiv7//3+RnZ3dgRGkc/r06QpMTEwXkKz6yMbGppCYmPgBrAAEZs2aZfD///8DIDYjI6NDWloaSAMDXAFMEYiGSWIowOZQAJCbKMUqT5VdAAAAAElFTkSuQmCC);
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	background-position: center right 10px;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 0;
+	height: 32px;
+	padding: 8px;
 }

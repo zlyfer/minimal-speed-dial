@@ -127,7 +127,7 @@ td {
 
 #bookmark_form button {
 	border: 0;
-	padding: 15px 30px;
+	padding: 10px 26px;
 	background-color: #007bff;
 	color: #fff;
 	text-transform: uppercase;
@@ -164,4 +164,15 @@ td {
 	margin: 20px auto 10px auto;
 	min-width: 20em;
 	max-width: 30%;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAeElEQVQoU2NkIAAYZ86cWcDAwMCPTd3///8/MM6YMeMCIyOjPg4FFxnnz58v8PPnzwPoiv7//3+RnZ3dgRGkc/r06QpMTEwXkKz6yMbGppCYmPgBrAAEZs2aZfD///8DIDYjI6NDWloaSAMDXAFMEYiGSWIowOZQAJCbKMUqT5VdAAAAAElFTkSuQmCC);
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	background-position: center right 10px;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 0;
+	height: 32px;
+	padding: 8px;
 }
