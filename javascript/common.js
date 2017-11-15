@@ -1,16 +1,23 @@
+DEFAULT_PARENT_ID = typeof browser === "undefined" ? "0" : "root________"
+
 // Generates a list of all folders under chrome bookmarks
 function generateFolderList() {
 	if (localStorage.getItem("show_folder_list") === "true" || window.location.pathname === "/options.html") {
 
 		chrome.bookmarks.getTree(function(rootNode) {
 			var folderList = [], openList = [], node, child;
-			// Never more than 2 root nodes, push both Bookmarks Bar & Other Bookmarks into array
-			openList.push(rootNode[0].children[0]);
-			openList.push(rootNode[0].children[1]);
+
+			if (DEFAULT_PARENT_ID === "0") {
+				// Never more than 2 root nodes, push both Bookmarks Bar & Other Bookmarks into array
+				openList.push(rootNode[0].children[0]);
+				openList.push(rootNode[0].children[1]);
+			} else {
+				openList.push.apply(openList, rootNode[0].children);
+			}
 
 			while ((node = openList.pop()) !== undefined) {
 				if (node.children !== undefined) {
-					if (node.parentId === "0") {
+					if (node.parentId === DEFAULT_PARENT_ID) {
 						node.path = ""; // Root elements have no parent so we shouldn't show their path
 					}
 					node.path += node.title;
@@ -56,7 +63,7 @@ function createDefaults() {
 		background_color: "#f6f6f6",
 		custom_icon_data: "{}",
 		center_vertically: "true",
-		default_folder_id: "1",
+		default_folder_id: DEFAULT_PARENT_ID,
 		dial_columns: "6",
 		dial_width: "70",
 		drag_and_drop: "true",
